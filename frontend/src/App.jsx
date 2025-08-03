@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 // const API_BASE = 'http://localhost:5000';
-const API_BASE = 'https://job-schedular-2fdk.onrender.com/'; // Replace with your actual API base URL
+const API_BASE = 'https://job-schedular-6d48.onrender.com'; // Replace with your actual API base URL
 // Auth Context
 const AuthContext = React.createContext();
 
