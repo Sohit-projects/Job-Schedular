@@ -5,13 +5,13 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const app = express();
 const PORT = process.env.PORT || 5000;
-
+const MongoDB_URI = 'mongodb+srv://sohitsolanki0001:YIGpEBGcqoCjoKAn@cluster0.7sczhaj.mongodb.net/JobSchedular';
 // Middleware
 app.use(cors());
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://sohitsolanki0001:YIGpEBGcqoCjoKAn@cluster0.7sczhaj.mongodb.net/JobSchedular', {
+mongoose.connect(MongoDB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
