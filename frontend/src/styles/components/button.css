@@ -1,0 +1,72 @@
+/* Base button styles */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  min-width: 120px;
+}
+
+/* Primary button */
+.btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Success button */
+.btn-success {
+  background: #27ae60;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #219a52;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: #95a5a6;
+  color: white;
+  font-size: 14px;
+  padding: 8px 16px;
+  min-width: auto;
+}
+
+.btn-secondary:hover {
+  background: #7f8c8d;
+}
+
+/* Danger button */
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+  font-size: 14px;
+  padding: 8px 16px;
+  min-width: auto;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.btn-danger:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
