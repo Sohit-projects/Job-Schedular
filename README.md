@@ -62,26 +62,79 @@ npm start
 ## 📁 Project Structure
 
 ```
-job-scheduling-app/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   ├── JobForm.js
-│   │   ├── JobList.js
-│   │   ├── JobItem.js
-│   │   └── Header.js
-│   ├── styles/
-│   │   ├── App.css
-│   │   └── components/
-│   ├── utils/
-│   │   └── helpers.js
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
+job-schedular-app/
+├── README.md
+├── package-lock.json
+│
+├── backend/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+└── frontend/
+    ├── .gitignore
+    ├── README.md
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── package-lock.json
+    ├── postcss.config.cjs
+    ├── tailwind.config.js
+    ├── vite.config.js
+    │
+    ├── public/
+    │   └── vite.svg
+    │
+    └── src/
+        ├── App.jsx
+        ├── main.jsx
+        │
+        ├── assets/
+        │   └── react.svg
+        │
+        ├── Components/
+        │   ├── auth/
+        │   │   ├── LoginForm.jsx
+        │   │   └── RegisterForm.jsx
+        │   │
+        │   ├── common/
+        │   │   ├── Button.jsx
+        │   │   └── LoadingSpinner.jsx
+        │   │
+        │   ├── jobs/
+        │   │   ├── JobForm.jsx
+        │   │   ├── JobItem.jsx
+        │   │   └── JobList.jsx
+        │   │
+        │   ├── layout/
+        │   │   ├── Header.jsx
+        │   │   └── MessageAlert.jsx
+        │   │
+        │   └── schedule/
+        │       ├── EarningsSummary.jsx
+        │       ├── ScheduleSection.jsx
+        │       └── ScheduledJob.jsx
+        │
+        ├── context/
+        │   └── AuthContext.jsx
+        │
+        ├── hooks/
+        │   ├── useAuth.js
+        │   ├── useJobs.js
+        │   └── useMessage.js
+        │
+        ├── services/
+        │   └── api.js
+        │
+        ├── styles/
+        │   ├── components/
+        │   ├── global.css
+        │   ├── index.css
+        │   └── utilities.css
+        │
+        └── utils/
 ```
+
 
 ## 🚀 Deployment on Render
 
